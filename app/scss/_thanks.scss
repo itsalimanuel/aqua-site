@@ -1,0 +1,35 @@
+.thanks{
+    opacity: 0;
+    width: 800px;
+    z-index: -1;
+    height: 400px;
+    position: absolute;
+    background-color: #1F324F;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .close{
+        position: absolute;
+        right: 0;
+        margin: 20px;
+        width: 40px;
+    }
+    &_title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: #ffffff;
+        h1{
+            font-size: 5rem;
+        }
+        h3{
+            font-size: 2.5rem;
+        }
+    }
+}
+.thanks-active{
+    opacity: 1;
+    z-index: 1;
+}
