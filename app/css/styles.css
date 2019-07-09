@@ -232,7 +232,8 @@ header {
           box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
   z-index: 10;
   background-color: #ffffff;
-  position: relative; }
+  position: fixed;
+  width: 100%; }
   header .logo {
     padding: 10px 0; }
     header .logo img {
@@ -632,10 +633,10 @@ main {
                   transform: translateX(-50%); }
         #home .home-text .container-fluid .home-title .line-2 {
           position: relative;
-          left: -50%;
-          -webkit-transform: translateX(30%);
-              -ms-transform: translateX(30%);
-                  transform: translateX(30%); }
+          left: -22%;
+          -webkit-transform: translateX(0);
+              -ms-transform: translateX(0);
+                  transform: translateX(0); }
         #home .home-text .container-fluid .home-title .line-3 {
           margin-left: 10%; }
         #home .home-text .container-fluid .home-title .line-4 {

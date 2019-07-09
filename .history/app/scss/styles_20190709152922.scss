@@ -55,7 +55,7 @@ header {
   z-index: 10;
   background-color: #ffffff;
   position: fixed;
-  width: 100%;
+  
   .logo {
     padding: 10px 0;
     img {
@@ -402,8 +402,8 @@ main {
         }
         .line-2 {
           position: relative;
-          left: -22%;
-          transform: translateX(0);
+          left: -50%;
+          transform: translateX(30%);
         }
         .line-3 {
           margin-left: 10%;
