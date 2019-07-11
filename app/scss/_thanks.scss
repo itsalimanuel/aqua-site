@@ -33,7 +33,7 @@
 
 .thanks-active {
   opacity: 1;
-  z-index: 10005;
+  z-index: 1000005;
 }
 
 .thanks-overlay {
@@ -49,10 +49,14 @@
 }
 
 .thanks-overlay.active {
-  z-index: 10001;
+  z-index: 100001;
   opacity: 1;
 }
 @media (max-width: 450px) {
+    .thanks-active {
+        opacity: 1;
+        z-index: 1000005;
+      }
   .thanks {
     width: 100%;
     &_title {

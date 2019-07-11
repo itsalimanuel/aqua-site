@@ -168,7 +168,7 @@
 
 .thanks-active {
   opacity: 1;
-  z-index: 10005; }
+  z-index: 1000005; }
 
 .thanks-overlay {
   width: 100vw;
@@ -184,10 +184,13 @@
   opacity: 0; }
 
 .thanks-overlay.active {
-  z-index: 10001;
+  z-index: 100001;
   opacity: 1; }
 
 @media (max-width: 450px) {
+  .thanks-active {
+    opacity: 1;
+    z-index: 1000005; }
   .thanks {
     width: 100%; }
     .thanks_title h1 {
@@ -1878,7 +1881,7 @@ main {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10000;
+  z-index: 3;
   display: none; }
   .modal .modal-container {
     width: 100%;
