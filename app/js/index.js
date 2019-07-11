@@ -7,6 +7,6 @@ $(document).ready(function () {
     $('.btn-row').click(function(){
         $('.thanks').toggleClass('thanks-active')
     })
-
+  
 
 })
