@@ -17,7 +17,6 @@ body {
     }
     header {
       filter: blur(2px);
-     
     }
     #page-container {
       z-index: -1;
@@ -698,15 +697,13 @@ main {
             margin-top: 30px;
             font-size: 1.2rem;
             height: 75vh;
-           overflow-y: scroll;
-           &::-webkit-scrollbar{
-            display: none;
-               }
+            overflow-y: scroll;
+            &::-webkit-scrollbar {
+              display: none;
+            }
             ul {
-           
               li {
                 margin: 10px;
-                
               }
             }
           }
@@ -753,14 +750,14 @@ main {
                 font-size: 2rem;
               }
               @keyframes swing {
-                0%{
-                  transform: translate(-50%,-50%) scale(1);
+                0% {
+                  transform: translate(-50%, -50%) scale(1);
                 }
-                50%{
-                  transform: translate(-50%,-50%) scale(1.2);
+                50% {
+                  transform: translate(-50%, -50%) scale(1.2);
                 }
-                100%{
-                  transform: translate(-50%,-50%)scale(1);
+                100% {
+                  transform: translate(-50%, -50%) scale(1);
                 }
               }
             }
@@ -1119,17 +1116,16 @@ main {
 }
 
 #contacts {
-
   //background-color: red;
   background-color: #fff;
-  .contact-back{
+  .contact-back {
     position: absolute;
     left: -15%;
     z-index: -1;
   }
-  .section-cont{
+  .section-cont {
     display: grid;
-    grid-template-columns: repeat(2,1fr)
+    grid-template-columns: repeat(2, 1fr);
   }
   .bg {
     min-height: 100%;
@@ -1200,7 +1196,6 @@ main {
                   left: 50%;
                   transform: translate(-50%, -50%);
                   animation: swing 2s ease-in-out infinite;
-
                 }
               }
             }
@@ -1223,39 +1218,38 @@ main {
                 margin-left: -3px;
               }
             }
-           
           }
         }
       }
-      .download-link{
+      .download-link {
         overflow: hidden;
         position: absolute;
         bottom: 100px;
         z-index: 999;
         right: 0;
-        background-color: #EB2233;
+        background-color: #eb2233;
         text-decoration: none;
         display: inline-flex;
-        p{
+        p {
           color: #fff;
           padding: 20px 30px 20px 30px;
           margin: 0;
           font-size: 2rem;
           z-index: 2;
         }
-        .icon{
+        .icon {
           width: 74px;
           z-index: 2;
           position: relative;
-          background-color: #1F324F;
-          i{
+          background-color: #1f324f;
+          i {
             position: absolute;
             left: 50%;
             top: 50%;
             font-size: 2rem;
             z-index: 2;
             color: #ffffff;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
           }
         }
       }
@@ -1382,6 +1376,7 @@ main {
       .btn-row {
         text-align: right;
         button {
+          overflow: hidden;
           position: relative;
           font-family: $font;
           -webkit-appearance: none;
@@ -1390,26 +1385,34 @@ main {
           color: #ffffff;
           font-size: 1rem;
           font-weight: 500;
-          height: 30px;
-          padding: 0 40px 0 10px;
+          height: 40px;
+          padding: 0 0 10px;
+
           transition: 0.3s;
-          cursor: pointer;
-          &::after {
-            position: absolute;
-            height: 30px;
-            width: 30px;
-            content: " ";
-            background-color: $blue;
-            top: 0;
-            right: 0;
-            background-image: url("../images/btn-submit-icon.svg");
-            background-size: 15px 15px;
-            background-position: center;
-            background-repeat: no-repeat;
+          display: inline-flex;
+          p {
+            z-index: 10;
+            padding: 0 20px;
+            position: relative;
+            top: -2px;
+            height: 0;
           }
-          &:hover {
-            background-color: $blue;
+          .img {
+            // width: 12px;
+            position: relative;
+            width: 40px;
+            height: 40px;
+            z-index: 10;
+            float: right;
+            background-color: #1f324f;
+            img {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              transform: translate(-50%, -50%);
+            }
           }
+          // background-image: url("../images/btn-submit-icon.svg");
         }
       }
     }
@@ -1504,6 +1507,7 @@ main {
     .btn-row {
       text-align: right;
       button {
+        overflow: hidden;
         position: relative;
         font-family: $font;
         -webkit-appearance: none;
@@ -1512,26 +1516,34 @@ main {
         color: #ffffff;
         font-size: 1rem;
         font-weight: 500;
-        height: 30px;
-        padding: 0 40px 0 10px;
+        height: 40px;
+        padding: 0 0 10px;
+
         transition: 0.3s;
-        cursor: pointer;
-        &::after {
-          position: absolute;
-          height: 30px;
-          width: 30px;
-          content: " ";
-          background-color: $blue;
-          top: 0;
-          right: 0;
-          background-image: url("../images/btn-submit-icon.svg");
-          background-size: 15px 15px;
-          background-position: center;
-          background-repeat: no-repeat;
+        display: inline-flex;
+        p {
+          z-index: 10;
+          padding: 0 20px;
+          position: relative;
+          top: -2px;
+          height: 0;
         }
-        &:hover {
-          background-color: $blue;
+        .img {
+          // width: 12px;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          z-index: 10;
+          float: right;
+          background-color: #1f324f;
+          img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
+        // background-image: url("../images/btn-submit-icon.svg");
       }
     }
   }
@@ -1731,6 +1743,7 @@ main {
         .btn-row {
           text-align: right;
           button {
+            overflow: hidden;
             position: relative;
             font-family: $font;
             -webkit-appearance: none;
@@ -1739,26 +1752,34 @@ main {
             color: #ffffff;
             font-size: 1rem;
             font-weight: 500;
-            height: 30px;
-            padding: 0 40px 0 10px;
+            height: 40px;
+            padding: 0 0 10px;
+  
             transition: 0.3s;
-            cursor: pointer;
-            &::after {
-              position: absolute;
-              height: 30px;
-              width: 30px;
-              content: " ";
-              background-color: $blue;
-              top: 0;
-              right: 0;
-              background-image: url("../images/btn-submit-icon.svg");
-              background-size: 15px 15px;
-              background-position: center;
-              background-repeat: no-repeat;
+            display: inline-flex;
+            p {
+              z-index: 10;
+              padding: 0 20px;
+              position: relative;
+              top: -2px;
+              height: 0;
             }
-            &:hover {
-              background-color: $blue;
+            .img {
+              // width: 12px;
+              position: relative;
+              width: 40px;
+              height: 40px;
+              z-index: 10;
+              float: right;
+              background-color: #1f324f;
+              img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
             }
+            // background-image: url("../images/btn-submit-icon.svg");
           }
         }
       }

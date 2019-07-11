@@ -12,7 +12,9 @@ $(document).ready(function () {
     });
 
 
-    $(".thanks .close").click(function() {
-        
+    $('.thanks').click(function() {
+
+        $('.thanks').removeClass('thanks-active')
+        $('.thanks-overlay').removeClass('active')
     });
 })
