@@ -76,7 +76,7 @@ gulp.task('clean', function(){
 
 gulp.task('build:css', function() {
     return gulp.src([
-        'app/css/main.css',
+        'app/css/styles.css',
         'app/css/libs.min.css'
     ])
         .pipe(concat('styles.min.css'))

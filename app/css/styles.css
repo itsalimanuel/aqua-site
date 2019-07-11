@@ -150,7 +150,8 @@
     position: absolute;
     right: 0;
     margin: 20px;
-    width: 40px; }
+    width: 40px;
+    cursor: pointer; }
   .thanks_title {
     position: absolute;
     top: 50%;
@@ -167,7 +168,24 @@
 
 .thanks-active {
   opacity: 1;
-  z-index: 1; }
+  z-index: 10005; }
+
+.thanks-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0; }
+
+.thanks-overlay.active {
+  z-index: 10001;
+  opacity: 1; }
 
 body {
   font-family: "Roboto", arial, sans-serif;
@@ -1483,7 +1501,6 @@ main {
           z-index: 2; }
         #contacts .contacts-left-cont .download-link .icon {
           width: 74px;
-          height: 74px;
           z-index: 2;
           position: relative;
           background-color: #1F324F; }

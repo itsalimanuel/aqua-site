@@ -4,9 +4,15 @@ $(document).ready(function () {
         $('.btn-click').removeClass('start-animation');
         $('.btn-click').toggleClass('start-animation');
     })
-    $('.btn-row').click(function(){
+    $('.btn-row').click(function(ev){
+        ev.preventDefault();
+
         $('.thanks').toggleClass('thanks-active')
-    })
+        $('.thanks-overlay').toggleClass('active')
+    });
 
 
+    $(".thanks .close").click(function() {
+        
+    });
 })

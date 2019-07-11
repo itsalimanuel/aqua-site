@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_36" data-name="Rectangle 36" width="1920" height="1080" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Shape_1_copy_8" x="-258.499" y="465.502" width="1531.994" height="970.999" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="69.5" result="blur"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Shape_1_copy_7" x="-307.502" y="-535.497" width="1332.998" height="2260.991" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="69.5" result="blur-2"/>
+      <feFlood flood-opacity="0.149"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Mask_Group_8" data-name="Mask Group 8" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Shape_1_copy_8)">
+      <path id="Shape_1_copy_8-2" data-name="Shape 1 copy 8" d="M1597,5232l-554.055-554L482,5232Z" transform="translate(-532 -4004)" fill="#eb2233"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Shape_1_copy_7)">
+      <path id="Shape_1_copy_7-2" data-name="Shape 1 copy 7" d="M286,5515.995l916-916.3L286,3672Z" transform="translate(-385 -3999)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
