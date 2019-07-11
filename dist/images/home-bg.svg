@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920" height="1124.3" viewBox="0 0 1920 1124.286" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="a">
+      <rect width="1920" height="1080" fill="#fff" stroke="#707070" data-name="Rectangle 37"/>
+    </clipPath>
+    <filter id="c" x="280.14" y="-381.56" width="3317.7" height="1858.9" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur" stdDeviation="69.5"/>
+      <feFlood flood-opacity=".149"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="e" x="-1588.5" y="-658.2" width="3875" height="2135" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2" stdDeviation="69.5"/>
+      <feFlood flood-opacity=".149"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="b">
+      <rect width="1920" height="1124.3" rx="69" fill="#fff" stroke="#707070" data-name="Rectangle 38"/>
+    </clipPath>
+    <filter id="d" x="-1764.5" y="-157.5" width="2965" height="1734.9" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur result="blur-3" stdDeviation="69.5"/>
+      <feFlood flood-opacity=".149"/>
+      <feComposite in2="blur-3" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="translate(0 44.286)" data-name="Group 129">
+    <rect width="1920" height="1080" fill="#fff" data-name="Rectangle 1"/>
+    <g clip-path="url(#a)" data-name="Mask Group 9">
+      <g transform="translate(0 -44.29)" filter="url(#c)">
+        <path transform="translate(-286 -1195.7)" d="m3675 2464-1441.1-1441l-1459 1441z" fill="#eb2233" stroke="#707070" stroke-linejoin="bevel" data-name="Shape 1 copy 6"/>
+      </g>
+    </g>
+    <g clip-path="url(#a)" data-name="Mask Group 8">
+      <g transform="translate(0 -44.29)" filter="url(#e)">
+        <path transform="translate(-278 -1204.7)" d="m2356 2473-1718.3-1718l-1739.7 1718z" fill="#fff" data-name="Shape 1 copy 4"/>
+      </g>
+    </g>
+    <g transform="translate(0 -44.286)" clip-path="url(#b)" data-name="Mask Group 10">
+      <g filter="url(#d)">
+        <path transform="translate(-286 -1238)" d="m-1270 1289 1266.1 1317.9 1281.9-1317.9z" fill="#1f324f" data-name="Shape 1 copy 5"/>
+      </g>
+    </g>
+  </g>
+</svg>

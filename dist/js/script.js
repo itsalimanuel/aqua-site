@@ -368,9 +368,7 @@ $('.sections-control-btns .next').click(function (ev) {
 $('.menu-items a').click(function(ev) {
    ev.preventDefault();
     if(!scrolling) changeSection($(this).attr('href').substring(1));
-    
 });
-
 
 $('#mobile-menu .menu a').click(function(ev) {
     ev.preventDefault();
