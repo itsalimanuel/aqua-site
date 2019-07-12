@@ -1327,7 +1327,7 @@ main {
           padding: 0 15px;
           transition: 0.1s;
         }
-        label {
+        &>label {
           position: absolute;
           font-family: $font;
           font-size: 1rem;
@@ -1357,7 +1357,7 @@ main {
             border: 2px solid $blue;
             background-color: transparent;
           }
-          label {
+          &>label {
             top: 0;
             left: 50%;
             transform: translate(-50%, -10px);
@@ -1372,7 +1372,7 @@ main {
           }
         }
         &.required {
-          label {
+          &>label {
             &::after {
               content: "*";
               font-size: 0.8rem;
@@ -1795,6 +1795,25 @@ main {
         }
       }
     }
+  }
+}
+
+.custom-file-upload {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  input[type=file] {
+    width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+  }
+  label {
+    z-index: 15;
+    display: block;
+    color: #1f324f;
   }
 }
 

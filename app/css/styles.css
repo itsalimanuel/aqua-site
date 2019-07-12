@@ -1607,7 +1607,7 @@ main {
           -webkit-transition: 0.1s;
           -o-transition: 0.1s;
           transition: 0.1s; }
-        #contacts .contacts-right form.ui-animated .form-group label {
+        #contacts .contacts-right form.ui-animated .form-group > label {
           position: absolute;
           font-family: "Roboto", arial, sans-serif;
           font-size: 1rem;
@@ -1638,7 +1638,7 @@ main {
         #contacts .contacts-right form.ui-animated .form-group.focused input {
           border: 2px solid #1F324F;
           background-color: transparent; }
-        #contacts .contacts-right form.ui-animated .form-group.focused label {
+        #contacts .contacts-right form.ui-animated .form-group.focused > label {
           top: 0;
           left: 50%;
           -webkit-transform: translate(-50%, -10px);
@@ -1651,7 +1651,7 @@ main {
         #contacts .contacts-right form.ui-animated .form-group.focused textarea {
           border: 2px solid #1F324F;
           background-color: transparent; }
-        #contacts .contacts-right form.ui-animated .form-group.required label::after {
+        #contacts .contacts-right form.ui-animated .form-group.required > label::after {
           content: "*";
           font-size: 0.8rem;
           color: #EB2233;
@@ -2080,6 +2080,22 @@ main {
                     -ms-transform: translate(-50%, -50%);
                         transform: translate(-50%, -50%); }
 
+.custom-file-upload {
+  position: absolute;
+  bottom: 10px;
+  right: 10px; }
+  .custom-file-upload input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1; }
+  .custom-file-upload label {
+    z-index: 15;
+    display: block;
+    color: #1f324f; }
+
 @media screen and (orientation: landscape) and (max-height: 450px) {
   #to-portrait-overlay {
     display: block; }
@@ -2506,7 +2522,7 @@ main {
       form.ui-animated .btn-row button .img {
         position: relative;
         width: 40px;
-        height: 40px;
+        height: 100%;
         z-index: 10;
         float: right;
         background-color: #1f324f; }
@@ -3097,7 +3113,7 @@ main {
     height: auto; }
   #contacts .contacts-right form.ui-animated .btn-row button .img {
     width: 46px;
-    height: 46px;
+    height: 100%;
     position: absolute;
     right: 0; } }
 
