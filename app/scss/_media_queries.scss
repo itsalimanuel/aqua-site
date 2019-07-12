@@ -10,6 +10,9 @@
   }
 }
 @media (max-width: 450px) {
+  header{
+    position: relative;
+  }
   #contacts .contact-back {
     display: none;
   }
@@ -146,7 +149,11 @@
     }
   }
 }
-
+@media (min-width: 300px) and (max-width:450px){
+  header{
+    position: relative;
+  }
+}
 @media (max-width: 575px) {
   #contacts .contacts-left-cont .download-link {
     bottom: -246px;

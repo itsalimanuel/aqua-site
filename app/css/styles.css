@@ -2105,6 +2105,8 @@ main {
     pointer-events: none; } }
 
 @media (max-width: 450px) {
+  header {
+    position: relative; }
   #contacts .contact-back {
     display: none; }
   .mobile-form-btn {
@@ -2206,6 +2208,10 @@ main {
         #mobile-menu .mobile-menu-cont .social-media ul a:nth-child(5) {
           position: relative;
           left: 10px; } }
+
+@media (min-width: 300px) and (max-width: 450px) {
+  header {
+    position: relative; } }
 
 @media (max-width: 575px) {
   #contacts .contacts-left-cont .download-link {
