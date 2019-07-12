@@ -190,7 +190,8 @@
 @media (max-width: 450px) {
   .thanks-active {
     opacity: 1;
-    z-index: 1000005; }
+    z-index: 1000005;
+    margin-left: -1px; }
   .thanks {
     width: 100%; }
     .thanks_title h1 {
@@ -327,6 +328,7 @@ header {
     font-size: 2rem;
     font-weight: 400;
     text-decoration: none;
+    margin-left: 29px;
     color: #ffffff;
     -webkit-transition: 0.2s;
     -o-transition: 0.2s;
@@ -1409,7 +1411,8 @@ main {
     z-index: -1; }
   #contacts .section-cont {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); }
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 50px; }
   #contacts .bg {
     min-height: 100%;
     position: absolute;
@@ -1420,122 +1423,129 @@ main {
       height: 100vh;
       -webkit-filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
               filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3)); }
-  #contacts .contacts-left {
+  #contacts .contacts-left-cont {
+    position: relative;
     height: 100%; }
-    #contacts .contacts-left-cont {
-      position: relative;
-      height: 100%; }
-      #contacts .contacts-left-cont h1 {
-        color: #EB2233;
-        margin-left: 130px;
-        font-size: 4rem;
-        text-transform: uppercase;
-        padding-top: 100px;
-        margin-left: 220px; }
-      #contacts .contacts-left-cont .social {
-        margin-top: 70px;
-        margin-left: 200px;
-        z-index: 10000; }
-        #contacts .contacts-left-cont .social a {
-          color: #1F324F;
-          margin: 0 20px;
-          z-index: 20;
-          font-size: 3rem;
-          z-index: 5555;
-          text-decoration: none; }
-      #contacts .contacts-left-cont .telephone-email {
-        position: absolute;
-        width: 100%;
-        z-index: 1;
-        bottom: 165px; }
-        #contacts .contacts-left-cont .telephone-email .telephone-email-cont {
-          position: relative;
-          z-index: 1; }
-          #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method {
-            background-color: #EB2233;
-            padding-left: 100px;
-            margin: 80px 0;
-            position: relative; }
-            #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont {
-              position: absolute;
-              top: 50%;
-              -webkit-transform: translateY(-50%);
-                  -ms-transform: translateY(-50%);
-                      transform: translateY(-50%); }
-              #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont .ic {
-                width: 100px;
-                height: 100px;
-                border-radius: 50%;
-                background-color: #ffffff;
-                position: relative;
-                display: inline-block;
-                -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
-                        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
-                #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont .ic img {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  -webkit-transform: translate(-50%, -50%);
-                      -ms-transform: translate(-50%, -50%);
-                          transform: translate(-50%, -50%);
-                  -webkit-animation: swing 2s ease-in-out infinite;
-                          animation: swing 2s ease-in-out infinite; }
-            #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .text {
-              color: #ffffff;
-              text-decoration: none;
-              font-size: 1.8rem;
-              font-weight: bold;
-              padding: 24px 80px 24px 120px;
-              display: inline-block; }
-            #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method.email img {
-              width: 30px; }
-            #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method.telephone img {
-              height: 35px;
-              margin-left: -3px; }
-      #contacts .contacts-left-cont .download-link {
-        overflow: hidden;
-        position: absolute;
-        bottom: 100px;
-        z-index: 999;
-        right: 0;
-        background-color: #eb2233;
-        text-decoration: none;
-        display: -webkit-inline-box;
-        display: -webkit-inline-flex;
-        display: -ms-inline-flexbox;
-        display: inline-flex; }
-        #contacts .contacts-left-cont .download-link p {
-          color: #fff;
-          padding: 20px 30px 20px 30px;
-          margin: 0;
-          font-size: 2rem;
-          z-index: 2; }
-        #contacts .contacts-left-cont .download-link .icon {
-          width: 74px;
-          z-index: 2;
-          position: relative;
-          background-color: #1f324f; }
-          #contacts .contacts-left-cont .download-link .icon i {
+    #contacts .contacts-left-cont h1 {
+      color: #EB2233;
+      margin-left: 130px;
+      font-size: 4rem;
+      text-transform: uppercase;
+      padding-top: 100px;
+      margin-left: 220px; }
+    #contacts .contacts-left-cont .social {
+      margin-top: 70px;
+      margin-left: 200px;
+      z-index: 10000; }
+      #contacts .contacts-left-cont .social a {
+        color: #1F324F;
+        margin: 0 20px;
+        z-index: 20;
+        font-size: 3rem;
+        z-index: 5555;
+        text-decoration: none; }
+    #contacts .contacts-left-cont .telephone-email {
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      bottom: 165px; }
+      #contacts .contacts-left-cont .telephone-email .telephone-email-cont {
+        position: relative;
+        z-index: 1; }
+        #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method {
+          background-color: #EB2233;
+          padding-left: 100px;
+          margin: 80px 0;
+          position: relative; }
+          #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont {
             position: absolute;
-            left: 50%;
             top: 50%;
-            font-size: 2rem;
-            z-index: 2;
+            -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                    transform: translateY(-50%); }
+            #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont .ic {
+              width: 100px;
+              height: 100px;
+              border-radius: 50%;
+              background-color: #ffffff;
+              position: relative;
+              display: inline-block;
+              -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2);
+                      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.2); }
+              #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .method-icon-cont .ic img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                -webkit-animation: swing 2s ease-in-out infinite;
+                        animation: swing 2s ease-in-out infinite; }
+          #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .text {
             color: #ffffff;
-            -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%); }
+            text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+            padding: 24px 80px 24px 120px;
+            display: inline-block; }
+          #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method.email img {
+            width: 30px; }
+          #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method.telephone img {
+            height: 35px;
+            margin-left: -3px; }
+    #contacts .contacts-left-cont .download-link {
+      overflow: hidden;
+      position: absolute;
+      bottom: 100px;
+      z-index: 999;
+      right: 0;
+      background-color: #eb2233;
+      text-decoration: none;
+      display: -webkit-inline-box;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+      display: inline-flex; }
+      #contacts .contacts-left-cont .download-link p {
+        color: #fff;
+        padding: 20px 30px 20px 30px;
+        margin: 0;
+        font-size: 2rem;
+        z-index: 2; }
+      #contacts .contacts-left-cont .download-link .icon {
+        width: 74px;
+        z-index: 2;
+        position: relative;
+        background-color: #1f324f; }
+        #contacts .contacts-left-cont .download-link .icon i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          font-size: 2rem;
+          z-index: 2;
+          color: #ffffff;
+          -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%); }
   #contacts .contacts-right {
-    position: absolute;
+    position: relative;
     top: 50%;
-    right: 10%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%); }
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
     #contacts .contacts-right h2 {
       font-size: 4rem;
       color: #1F324F;
       font-weight: bold; }
+    #contacts .contacts-right-cont {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      margin-left: 50px;
+      margin-top: -30px; }
     #contacts .contacts-right .mobile-form-btn {
       display: none;
       width: 100%;
@@ -1554,7 +1564,7 @@ main {
         color: #ffffff;
         font-size: 1.4rem; }
     #contacts .contacts-right form.ui-animated {
-      width: 400px;
+      width: 70%;
       position: relative; }
       #contacts .contacts-right form.ui-animated .final-message {
         width: 100%;
@@ -1673,7 +1683,7 @@ main {
             z-index: 10;
             padding: 0 20px;
             position: relative;
-            top: -2px;
+            top: -4px;
             height: 0; }
           #contacts .contacts-right form.ui-animated .btn-row button .img {
             position: relative;
@@ -2442,7 +2452,7 @@ main {
   #contacts .contacts-right {
     left: 50%;
     right: unset;
-    top: unset;
+    top: 100px;
     bottom: 0;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -2457,6 +2467,9 @@ main {
       padding: 0 10px; }
     #contacts .contacts-right .effect {
       display: none; }
+    #contacts .contacts-right-cont {
+      margin-left: 0;
+      margin-top: 20px; }
   #contacts .cp-en {
     bottom: 44px; }
   form.ui-animated .form-group.focused label {
@@ -2916,7 +2929,7 @@ main {
   #contacts .contacts-right {
     left: 50%;
     right: unset;
-    top: unset;
+    top: 78px;
     bottom: 0;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -3065,6 +3078,28 @@ main {
 @media (min-width: 1381px) {
   .mobile-menu-btn {
     display: none; } }
+
+@media (min-width: 1381px) {
+  #contacts .contacts-right form.ui-animated .form-group input {
+    height: 56px; }
+  #contacts .contacts-right form.ui-animated .form-group label {
+    font-size: 1.5rem; }
+  #contacts .contacts-right form.ui-animated .btn-row {
+    padding-top: 30px;
+    position: absolute;
+    right: 0; }
+  #contacts .contacts-right form.ui-animated .btn-row button p {
+    padding: 0 66px;
+    top: -6px;
+    left: -12px; }
+  #contacts .contacts-right form.ui-animated .btn-row button {
+    font-size: 1.2rem;
+    height: auto; }
+  #contacts .contacts-right form.ui-animated .btn-row button .img {
+    width: 46px;
+    height: 46px;
+    position: absolute;
+    right: 0; } }
 
 .effect::before, .effect::after {
   content: '';
