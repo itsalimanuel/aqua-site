@@ -1,7 +1,6 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -26,5 +25,14 @@
     "gulp-uglify": "^3.0.2",
     "imagemin-pngquant": "^8.0.0",
     "jquery": "^3.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsalimanuel/aqua-site.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itsalimanuel/aqua-site/issues"
+  },
+  "homepage": "https://github.com/itsalimanuel/aqua-site#readme",
+  "description": ""
 }
