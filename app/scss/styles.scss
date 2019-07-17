@@ -1118,6 +1118,10 @@ main {
 
 #contacts {
   //background-color: red;
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #fff;
   .contact-back {
     position: absolute;
@@ -1128,6 +1132,8 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-bottom: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden;
   }
   .bg {
     min-height: 100%;
@@ -1169,10 +1175,9 @@ main {
         }
       }
       .telephone-email {
-        position: absolute;
+        position: relative;
         width: 100%;
         z-index: 1;
-        bottom: 165px;
         .telephone-email-cont {
           position: relative;
           z-index: 1;
@@ -1226,10 +1231,10 @@ main {
       }
       .download-link {
         overflow: hidden;
-        position: absolute;
-        bottom: 100px;
+        position: relative;
         z-index: 999;
         right: 0;
+        float: right;
         background-color: #eb2233;
         text-decoration: none;
         display: inline-flex;

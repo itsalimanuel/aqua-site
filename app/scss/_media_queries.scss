@@ -159,9 +159,8 @@
     bottom: -246px;
     right: 35px;
     /* margin: 0 30px; */
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute;
+    
     /* margin: 0 30px; */
     p {
       padding: 15px 30px 13px 30px;
@@ -1379,4 +1378,10 @@
     position: absolute;
     right: 0;
   }
+}
+@media (min-width: 1900px){
+  #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .text{
+    color: #fff;
+  }
+  
 }

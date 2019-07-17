@@ -1404,6 +1404,10 @@ main {
           z-index: 3; }
 
 #contacts {
+  background-image: url("../images/background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-color: #fff; }
   #contacts .contact-back {
     position: absolute;
@@ -1412,7 +1416,9 @@ main {
   #contacts .section-cont {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    overflow-y: scroll;
+    overflow-x: hidden; }
   #contacts .bg {
     min-height: 100%;
     position: absolute;
@@ -1445,10 +1451,9 @@ main {
         z-index: 5555;
         text-decoration: none; }
     #contacts .contacts-left-cont .telephone-email {
-      position: absolute;
+      position: relative;
       width: 100%;
-      z-index: 1;
-      bottom: 165px; }
+      z-index: 1; }
       #contacts .contacts-left-cont .telephone-email .telephone-email-cont {
         position: relative;
         z-index: 1; }
@@ -1495,10 +1500,10 @@ main {
             margin-left: -3px; }
     #contacts .contacts-left-cont .download-link {
       overflow: hidden;
-      position: absolute;
-      bottom: 100px;
+      position: relative;
       z-index: 999;
       right: 0;
+      float: right;
       background-color: #eb2233;
       text-decoration: none;
       display: -webkit-inline-box;
@@ -2218,11 +2223,7 @@ main {
     bottom: -246px;
     right: 35px;
     /* margin: 0 30px; */
-    position: relative;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    position: absolute;
     /* margin: 0 30px; */ }
     #contacts .contacts-left-cont .download-link p {
       padding: 15px 30px 13px 30px; }
@@ -3122,6 +3123,10 @@ main {
     height: 100%;
     position: absolute;
     right: 0; } }
+
+@media (min-width: 1900px) {
+  #contacts .contacts-left-cont .telephone-email .telephone-email-cont .contact-method .text {
+    color: #fff; } }
 
 .effect::before, .effect::after {
   content: '';
